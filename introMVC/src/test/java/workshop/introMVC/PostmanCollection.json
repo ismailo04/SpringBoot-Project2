@@ -1,0 +1,357 @@
+{
+	"info": {
+		"_postman_id": "3d204462-04ab-415f-bd62-8e0e931c2c4b",
+		"name": "Intro to SpringBoot Workshop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24267931"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "addUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/user/addUser?email=testingtesting@gmail.com&password=password",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"addUser"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "testingtesting@gmail.com"
+								},
+								{
+									"key": "password",
+									"value": "password"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getUser",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/user/getUser?email=jared@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"getUser"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "jared@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteUser",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/user/deleteUser?email=jared@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"deleteUser"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "jared@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateEmail",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/user/updateEmail?oldEmail=testingtesting@gmail.com&newEmail=newTesting@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"updateEmail"
+							],
+							"query": [
+								{
+									"key": "oldEmail",
+									"value": "testingtesting@gmail.com"
+								},
+								{
+									"key": "newEmail",
+									"value": "newTesting@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updatePassword",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/user/updatePassword?password=12345&email=newTesting@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"updatePassword"
+							],
+							"query": [
+								{
+									"key": "password",
+									"value": "12345"
+								},
+								{
+									"key": "email",
+									"value": "newTesting@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Stock",
+			"item": [
+				{
+					"name": "viewStock",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/stock/view?ticker=AAPL",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"stock",
+								"view"
+							],
+							"query": [
+								{
+									"key": "ticker",
+									"value": "AAPL"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Portfolio",
+			"item": [
+				{
+					"name": "getPortfolio",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/portfolio/getPortfolio?id=2e221b41-4ea8-4c68-9438-c04e77afd4bd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"portfolio",
+								"getPortfolio"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2e221b41-4ea8-4c68-9438-c04e77afd4bd"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createPortfolio",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/portfolio/createPortfolio?email=nabil@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"portfolio",
+								"createPortfolio"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "nabil@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addStock",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/portfolio/addStock?email=nabil@gmail.com&ticker=AAPL",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"portfolio",
+								"addStock"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "nabil@gmail.com"
+								},
+								{
+									"key": "ticker",
+									"value": "AAPL"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/portfolio/getPortfolioStocks?id=2e221b41-4ea8-4c68-9438-c04e77afd4bd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"portfolio",
+								"getPortfolioStocks"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2e221b41-4ea8-4c68-9438-c04e77afd4bd"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteStock",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/portfolio/deleteStock?email=nabil@gmail.com&ticker=AAPL",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"portfolio",
+								"deleteStock"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "nabil@gmail.com"
+								},
+								{
+									"key": "ticker",
+									"value": "AAPL"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletePortfolio",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/portfolio/deletePortfolio?email=nabil@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"portfolio",
+								"deletePortfolio"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "nabil@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
